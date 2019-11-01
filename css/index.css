@@ -1,0 +1,21 @@
+.banner{width:100%;height:460px;position:relative;}
+.banner .pic ul li{position:absolute;width:100%;height:460px;background:url(../images/bannerdz01.png) no-repeat center top;}
+.banner .pic ul li.cur{z-index:5;}
+.banner .ban-inner{width:460px;border:1px solid red;padding-left:540px;padding-top:64px;margin:0 auto;}
+.banner .title{height:66px;background:url(../images/icon07.png) no-repeat 2px 0;}
+.banner .title .txt{padding-left:83px;color:#fff;width:159px;float:left;}
+.banner .title .txt h3{height:44px;line-height:44px;font-size:38px;font-weight:bold;}
+.banner .title .txt h6{height:22px;line-height:22px;}
+.banner .title .ongame{width:115px;float:right;padding-top:10px;position:relative;}
+.banner .title .ongame:hover dl dt{background-position:-120px 0;}
+.banner .title .ongame:hover dl dd{display:block;}
+.banner .ongame dl dt{background:url(../images/online.png) no-repeat;padding-left:17px;height:37px;line-height:37px;}
+.banner .ongame dl dd{positon:absolute;top:46px;left:0;height:65px;background-color:#fff;border-radius:0 0 20px 20px;padding-left:17px;display:none;}
+.banner .ongame dl dd a{float:left;width:24px;height:24px;background:url(../images/online.png) no-repeat -1px -47px;margin-right:8px;margin-bottom:4px;}
+.banner .ongame dl dd a.no2{background-position:-51px -47px;}
+.banner .ongame dl dd a.no3{background-position:-76px -47px;}
+.banner .ongame dl dd a.no4{background-position:-101px -47px;}
+.banner .circles{width:42px;height:12px;position:absolute;left:50%;bottom:20px;margin-left:-21px;z-index:5;}
+.banner .circles ol li{width:12px;height:12px;background-color:rgba(255,255,255,.5);float:left;margin-right:15px;border-radius:50%;}
+.banner .circles ol li.cur{background-color:#fff;}
+

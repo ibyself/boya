@@ -1,0 +1,89 @@
+/*公共样式*/
+a {
+	text-decoration: none;
+	color: #000;
+}
+.inner {
+	width: 1000px;
+	/*块级元素居中*/
+	margin: 0 auto;
+}
+/*header开始*/
+.header {
+	height: 58px;
+	background-color: #191D3A;
+}
+/*书写选择器 最后把祖先补全*/
+.header .inner .logo {
+	float: left;
+	width: 205px;
+	height: 48px;
+	/*h1 和 a之间有距离 padding*/
+	padding: 10px 0 0 20px;
+}
+.header .inner .logo a {
+	/*行内元素 设置宽高*/
+	display: block;
+	width: 157px;
+	height: 35px;
+	/*在css中引入背景图  路径设置 跳出css文件夹 ../*/
+	background: url(../images/logo.png) no-repeat;
+	/*a标签内部书写的文字是给爬虫查看的  用户只能看到背景图*/
+	text-indent: -999em;
+	overflow: hidden;
+}
+.header .inner .nav {
+	/*同级元素要浮动都浮动 h1浮动  其他都必须设置*/
+	float: left;
+	width: 626px;
+	height: 58px;
+}
+.header .inner .nav ul li {
+	/*浮动float是盒子属性不能继承*/
+	float: left;
+	width: 85px;
+	height: 58px;
+	/*左边框*/
+	border-left: 1px solid #252947;
+	line-height: 58px;
+}
+.header .inner .nav ul li.join {
+	width: 100px;
+	height: 46px;
+	padding-top: 12px;
+	padding-left: 9px;
+}
+.header .inner .nav ul li.join a {
+	width: 98px;
+	height: 32px;
+	border: 1px solid #3ACA7A;
+	background-color: #38B774;
+	color: #fff;
+	line-height: 32px;
+	border-radius: 3px;
+}
+.header .inner .nav ul li.cur a {
+	background-color: #252947;
+	color: #fff;
+}
+.header .inner .nav ul li a {
+	display: block;
+	color: #818496;
+	font-size: 12px;
+	text-align: center;
+}
+.header .inner .lang {
+	float: right;
+	/*浮动元素  脱标  如果不设置宽高 都是内容撑开*/
+	height: 58px;
+	line-height: 58px;
+}
+.header .inner .lang a {
+	color: #444866;
+}
+.header .inner .lang a.on {
+	color: #38B774;
+}
+.header .inner .lang a.mgl {
+	margin-left: 10px;
+}
